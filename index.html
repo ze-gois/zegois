@@ -91,10 +91,11 @@
             margin-bottom: 4px;
         }
         .skills-list {
-            display: flex;
+            display: inline-block;
             flex-wrap: wrap;
             gap: 8px;
         }
+
         .skills-list span {
             background: #eef2f5;
             padding: 5px 12px;
@@ -156,10 +157,32 @@
                </ul>
             </div>
 
-            <div>
-
+            <div class="skill-list">
+                <h3>Web</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                </ul>
             </div>
         </section>
+
+
+        <section>
+            <h2>Rust crates</h2>
+            I have built a crate ecossystem that gives us abstraction over the Linux kernel.
+
+            <ul>
+                <li>Ample</li>
+                This crate give us abstraction
+
+                <li>Userspace</li>
+                This crate bootstraps rust from assembly and provides a userspace environment.
+            </ul>
+        </section>
+
 
         <section>
             <h2>Experience</h2>
