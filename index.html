@@ -118,12 +118,17 @@
             align-items: center;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
             gap: 20px;
         }
         .historical-grid li {
             list-style: none;
             align-items: center;
+        }
+        .thumbnail_abstract_grid {
+            display: grid;
+            grid-template-columns: 1fr 29fr;
+            gap: 10px;
         }
     </style>
     </head>
@@ -283,19 +288,29 @@
         </section>
 
         <h2>Publications</h2>
-        <ul class="#publications-list">
+        <ul class="publications-list">
             <li>
-                <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0053374">
+
+                <h3><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0053374">
                     Rising Publication Delays Inflate Journal Impact Factors
                 </a>
-                <div>
+                </h3>
+                <div class="thumbnail_abstract_grid">
                     <a href="assets/artigos/delay_inflates.pdf">
                         <img src="assets/artigos/delay_inflates.png" alt="Frontiers in Human Neuroscience" style="max-width: 120px; height: auto;">
                     </a>
-                    <b>Abstract</b>
-                    <p>
-                        Journal impact factors have become an important criterion to judge the quality of scientific publications over the years, influencing the evaluation of institutions and individual researchers worldwide. However, they are also subject to a number of criticisms. Here we point out that the calculation of a journal’s impact factor is mainly based on the date of publication of its articles in print form, despite the fact that most journals now make their articles available online before that date. We analyze 61 neuroscience journals and show that delays between online and print publication of articles increased steadily over the last decade. Importantly, such a practice varies widely among journals, as some of them have no delays, while for others this period is longer than a year. Using a modified impact factor based on online rather than print publication dates, we demonstrate that online-to-print delays can artificially raise a journal’s impact factor, and that this inflation is greater for longer publication lags. We also show that correcting the effect of publication delay on impact factors changes journal rankings based on this metric. We thus suggest that indexing of articles in citation databases and calculation of citation metrics should be based on the date of an article’s online appearance, rather than on that of its publication in print.
-                    </p>
+                    <div>
+                        <p>
+                            This article demonstrates that the hybrid journals (on-line and physical)
+                            impact factor (a metric of how influence the articles are) are inflated
+                            by the way the metric is computed since the physical publication date is used and
+                            the on-line publication date - that is becoming earlier - is not considered.
+                        </p>
+                        <p>
+                            My work here is on data collection by manually gathering Elsevier's Web of Knowledge data
+                            and analyzing it using MATLAB.
+                        </p>
+                    </div>
                 </div>
                 <span class="pub-meta">(2013 | Citations: 0 | Venue: PLOS ONE)</span>
             </li>
@@ -303,14 +318,22 @@
                 <a href="https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2013.00836/full">
                     Dream characteristics in a Brazilian sample: an online survey focusing on lucid dreaming
                 </a>
-                <div>
-                <a href="assets/artigos/lucid_dream.pdf">
-                    <img src="assets/artigos/lucid_dream.png" alt="Frontiers in Human Neuroscience" style="max-width: 120px; height: auto;">
-                </a>
-                <b>Abstract</b>
-                <p>
-                    During sleep, humans experience the offline images and sensations that we call dreams, which are typically emotional and lacking in rational judgment of their bizarreness. However, during lucid dreaming (LD), subjects know that they are dreaming, and may control oneiric content. Dreaming and LD features have been studied in North Americans, Europeans and Asians, but not among Brazilians, the largest population in Latin America. Here we investigated dreams and LD characteristics in a Brazilian sample (n = 3,427; median age = 25 years) through an online survey. The subjects reported recalling dreams at least once a week (76%), and that dreams typically depicted actions (93%), known people (92%), sounds/voices (78%), and colored images (76%). The oneiric content was associated with plans for the upcoming days (37%), memories of the previous day (13%), or unrelated to the dreamer (30%). Nightmares usually depicted anxiety/fear (65%), being stalked (48%), or other unpleasant sensations (47%). These data corroborate Freudian notion of day residue in dreams, and suggest that dreams and nightmares are simulations of life situations that are related to our psychobiological integrity. Regarding LD, we observed that 77% of the subjects experienced LD at least once in life (44% up to 10 episodes ever), and for 48% LD subjectively lasted less than 1 min. LD frequency correlated weakly with dream recall frequency (r = 0.20, p < 0.01), and LD control was rare (29%). LD occurrence was facilitated when subjects did not need to wake up early (38%), a situation that increases rapid eye movement sleep (REMS) duration, or when subjects were under stress (30%), which increases REMS transitions into waking. These results indicate that LD is relatively ubiquitous but rare, unstable, difficult to control, and facilitated by increases in REMS duration and transitions to wake state. Together with LD incidence in USA, Europe and Asia, our data from Latin America strengthen the notion that LD is a general phenomenon of the human species.
-                </p>
+                <div class="thumbnail_abstract_grid">
+                    <a href="assets/artigos/lucid_dream.pdf">
+                        <img src="assets/artigos/lucid_dream.png" alt="Frontiers in Human Neuroscience" style="max-width: 120px; height: auto;">
+                    </a>
+                    <div>
+                        <p>
+                            This article demonstrates that the hybrid journals (on-line and physical)
+                            impact factor (a metric of how influence the articles are) are inflated
+                            by the way the metric is computed since the physical publication date is used and
+                            the on-line publication date - that is becoming earlier - is not considered.
+                        </p>
+                        <p>
+                            My work here is on data collection by manually gathering Elsevier's Web of Knowledge data
+                            and analyzing it using MATLAB.
+                        </p>
+                    </div>
                 </div>
                 <span class="pub-meta">(2013 | Citations: 0 | Venue: Frontiers in Human Neuroscience)</span>
             </li>
@@ -318,14 +341,22 @@
                 <a href="https://journals.physiology.org/doi/full/10.1152/jn.00367.2014">
                     Interconnection and synchronization of neuronal populations in the mouse medial septum/diagonal band of Broca
                 </a>
-                <div>
-                <a href="assets/artigos/medial_septum.pdf">
-                    <img src="assets/artigos/medial_septum.png" alt="Frontiers in Human Neuroscience" style="max-width: 120px; height: auto;">
-                </a>
-                <b>Abstract</b>
-                <p>
-                    The medial septum/diagonal band of Broca (MS/DBB) is crucial for hippocampal theta rhythm generation (4–12 Hz). However, the mechanisms behind theta rhythmogenesis are still under debate. The MS/DBB consists, in its majority, of three neuronal populations that use acetylcholine, GABA, or glutamate as neurotransmitter. While the firing patterns of septal neurons enable the MS/DBB to generate rhythmic output critical for the generation of the hippocampal theta rhythm, the ability to synchronize these action potentials is dependent on the interconnectivity between the three major MS/DBB neuronal populations, yet little is known about intraseptal connections. Here we assessed the connectivity between pairs of MS/DBB neurons with paired patch-clamp recordings. We found that glutamatergic and GABAergic neurons provide intraseptal connections and produce sizable currents in MS/DBB postsynaptic cells. We also analyzed linear and nonlinear relationships between the action potentials fired by pairs of neurons belonging to various MS/DBB neuronal populations. Our results show that while the synchrony index for action potential firing was significantly higher in pairs of GABAergic neurons, coherence of action potential firing in the theta range was similarly low in all pairs analyzed. Recurrence analysis demonstrated that individual action potentials were more recurrent in cholinergic neurons than in other cell types. Implementing sparse connectivity in a computer model of the MS/DBB network reproduced our experimental data. We conclude that the interplay between the intrinsic membrane properties of different MS/DBB neuronal populations and the connectivity among these populations underlie the ability of the MS/DBB network to critically contribute to hippocampal theta rhythmogenesis.
-                </p>
+                <div class="thumbnail_abstract_grid">
+                    <a href="assets/artigos/medial_septum.pdf">
+                        <img src="assets/artigos/medial_septum.png" alt="Frontiers in Human Neuroscience" style="max-width: 120px; height: auto;">
+                    </a>
+                    <div>
+                        <p>
+                            This article demonstrates that the hybrid journals (on-line and physical)
+                            impact factor (a metric of how influence the articles are) are inflated
+                            by the way the metric is computed since the physical publication date is used and
+                            the on-line publication date - that is becoming earlier - is not considered.
+                        </p>
+                        <p>
+                            My work here is on data collection by manually gathering Elsevier's Web of Knowledge data
+                            and analyzing it using MATLAB.
+                        </p>
+                    </div>
                 </div>
                 <span class="pub-meta">(2014 | Citations: 0 | Venue: Journal of Neurophysiology)</span>
             </li>
@@ -333,14 +364,22 @@
                 <a href="https://www.cell.com/cell-reports/fulltext/S2211-1247(18)31643-7">
                     Characterizing Speed Cells in the Rat Hippocampus
                 </a>
-                <div>
+                <div class="thumbnail_abstract_grid">
                     <a href="assets/artigos/speed_cell.pdf">
                         <img src="assets/artigos/speed_cell.png" alt="Frontiers in Human Neuroscience" style="max-width: 120px; height: auto;">
                     </a>
-                    <b>Abstract</b>
-                    <p>
-                    Spatial navigation relies on visual landmarks as well as on self-motion information. In familiar environments, both place and grid cells maintain their firing fields in darkness, suggesting that they continuously receive information about locomotion speed required for path integration. Consistently, "speed cells" have been previously identified in the hippocampal formation and characterized in detail in the medial entorhinal cortex. Here we investigated speed-correlated firing in the hippocampus. We show that CA1 has speed cells that are stable across contexts, position in space, and time. Moreover, their speed-correlated firing occurs within theta cycles, independently of theta frequency. Interestingly, a physiological classification of cell types reveals that all CA1 speed cells are inhibitory. In fact, while speed modulates pyramidal cell activity, only the firing rate of interneurons can accurately predict locomotion speed on a sub-second timescale. These findings shed light on network models of navigation.
-                    </p>
+                    <div>
+                        <p>
+                            This article demonstrates that the hybrid journals (on-line and physical)
+                            impact factor (a metric of how influence the articles are) are inflated
+                            by the way the metric is computed since the physical publication date is used and
+                            the on-line publication date - that is becoming earlier - is not considered.
+                        </p>
+                        <p>
+                            My work here is on data collection by manually gathering Elsevier's Web of Knowledge data
+                            and analyzing it using MATLAB.
+                        </p>
+                    </div>
                 </div>
                 <span class="pub-meta">(2018 | Citations: 0 | Venue: Cell Reports)</span>
             </li>
