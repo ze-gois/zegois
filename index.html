@@ -4,19 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-
-    .diplom {
-        display: block;
-        max-width: 90%;
-        height: auto;
-        border: 6px solid #fff;
-        outline: 2px solid #2c3e50;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        padding: 4px;
-        background: #fff;
-    }
-
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --light: #f8f9fa;
+            --gray: #555;
+        }
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
             max-width: 850px;
@@ -105,6 +98,74 @@
             font-size: 0.9em;
             color: #2c3e50;
         }
+
+        .scholarships-list {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .scholarship-entry {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 10px 15px;
+            background: #f7f9fa;
+            border-left: 4px solid #2c3e50;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+        .scholarship-entry:hover {
+            transform: translateX(4px);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+        .scholarship-entry .year {
+            font-weight: bold;
+            color: #fff;
+            background: #2c3e50;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            min-width: 50px;
+            text-align: center;
+        }
+        .scholarship-entry .agency {
+            font-weight: bold;
+            color: #2c3e50;
+            background: #eef2f5;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+        }
+        .scholarship-entry .advisor {
+            color: #444;
+            font-style: italic;
+        }
+        #publications-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        #publications-list li > a:first-child {
+            flex-shrink: 0;
+        }
+        #publications-list li > div {
+            flex: 1;
+        }
+
+        .diplom {
+            display: block;
+            max-width: 90%;
+            height: auto;
+            border: 6px solid #fff;
+            outline: 2px solid #2c3e50;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            padding: 4px;
+            background: #fff;
+        }
+
         .diplomas-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -114,6 +175,7 @@
         .diplomas-grid li {
             list-style: none;
         }
+
         .historical-grid {
             align-items: center;
             display: grid;
@@ -184,28 +246,28 @@
                 </li>
                 <li class="entry">
                     <div class="entry-header">
-                        <span class="role">PhD in Computational Neuroscience</span>
+                        <span class="role">PhD. in Computational Neuroscience</span>
                         <span class="date">2016-2020</span>
                     </div>
                     <div class="entry-subheader">UFRN</div>
                 </li>
                 <li class="entry">
                     <div class="entry-header">
-                        <span class="role">MSc in Molecular Neuroscience</span>
+                        <span class="role">MSc. in Molecular Neuroscience</span>
                         <span class="date">2012-2015</span>
                     </div>
                     <div class="entry-subheader">UFRN</div>
                 </li>
                 <li class="entry">
                     <div class="entry-header">
-                        <span class="role">BSc in Information Technology</span>
+                        <span class="role">BSc. in Information Technology</span>
                         <span class="date">2018-2024</span>
                     </div>
                     <div class="entry-subheader">UFRN</div>
                 </li>
                 <li class="entry">
                     <div class="entry-header">
-                        <span class="role">BSc in Science and Technology</span>
+                        <span class="role">BSc. in Science and Technology</span>
                         <span class="date">2009-2012</span>
                     </div>
                     <div class="entry-subheader">UFRN</div>
@@ -265,51 +327,6 @@
         <section>
             <h2>Scholarships</h2>
 
-            <style>
-                .scholarships-list {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 5px;
-                }
-                .scholarship-entry {
-                    display: flex;
-                    align-items: center;
-                    gap: 5px;
-                    padding: 10px 15px;
-                    background: #f7f9fa;
-                    border-left: 4px solid #2c3e50;
-                    border-radius: 6px;
-                    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-                    transition: transform 0.15s ease, box-shadow 0.15s ease;
-                }
-                .scholarship-entry:hover {
-                    transform: translateX(4px);
-                    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-                }
-                .scholarship-entry .year {
-                    font-weight: bold;
-                    color: #fff;
-                    background: #2c3e50;
-                    padding: 4px 10px;
-                    border-radius: 12px;
-                    font-size: 0.85em;
-                    min-width: 50px;
-                    text-align: center;
-                }
-                .scholarship-entry .agency {
-                    font-weight: bold;
-                    color: #2c3e50;
-                    background: #eef2f5;
-                    padding: 4px 12px;
-                    border-radius: 12px;
-                    font-size: 0.85em;
-                }
-                .scholarship-entry .advisor {
-                    color: #444;
-                    font-style: italic;
-                }
-            </style>
-
             <div class="scholarships-list">
                 <div class="scholarship-entry">
                     <span class="year">2024</span>
@@ -365,21 +382,6 @@
         </section>
 
         <section style="display: block;">
-            <style>
-                #publications-list li {
-                    display: flex;
-                    align-items: flex-start;
-                    gap: 15px;
-                    margin-bottom: 25px;
-                }
-                #publications-list li > a:first-child {
-                    flex-shrink: 0;
-                }
-                #publications-list li > div {
-                    flex: 1;
-                }
-            </style>
-
         <h2>Publications</h2>
         <ul class="publications-list">
             <li>
@@ -476,65 +478,64 @@
     </section>
 
 
-    <section>
-        <h2>Diplomas</h2>
-        <div>
-            <ul>
-                <div class="diplomas-grid">
-                    <li>
-                        Bachelor's Degree in Science and Technology
-                        <div><a href="assets/diplomas/diploma_cet.jpg"> <img class="diplom" src="assets/diplomas/diploma_cet.jpg" alt=""></a></div>
-                    </li>
-                    <li>
-                        Bachelor's Degree in Information Technology
-                        <div><a href="assets/diplomas/diploma_bti.png"> <img class="diplom" src="assets/diplomas/diploma_bti.png" alt=""></a></div>
-                    </li>
-                    <li>
-                        Master's Degree in Molecular Neuroscience
-                        <div><a href="assets/diplomas/diploma_master.png"> <img class="diplom" src="assets/diplomas/diploma_master.png" alt=""></a></div>
-                    </li>
-                    <li>
-                        Doctorate Degree in Computational Neuroscience
-                        <div><a href="assets/diplomas/diploma_doutorado.jpg"> <img class="diplom" src="assets/diplomas/diploma_doutorado.jpg" alt=""></a></div>
-                    </li>
-                </div>
-            </ul>
-        </div>
-    </section>
+        <section>
+            <h2>Diplomas</h2>
+            <div>
+                <ul>
+                    <div class="diplomas-grid">
+                        <li>
+                            Bachelor's Degree in Science and Technology
+                            <div><a href="assets/diplomas/diploma_cet.jpg"> <img class="diplom" src="assets/diplomas/diploma_cet.jpg" alt=""></a></div>
+                        </li>
+                        <li>
+                            Bachelor's Degree in Information Technology
+                            <div><a href="assets/diplomas/diploma_bti.png"> <img class="diplom" src="assets/diplomas/diploma_bti.png" alt=""></a></div>
+                        </li>
+                        <li>
+                            Master's Degree in Molecular Neuroscience
+                            <div><a href="assets/diplomas/diploma_master.png"> <img class="diplom" src="assets/diplomas/diploma_master.png" alt=""></a></div>
+                        </li>
+                        <li>
+                            Doctorate Degree in Computational Neuroscience
+                            <div><a href="assets/diplomas/diploma_doutorado.jpg"> <img class="diplom" src="assets/diplomas/diploma_doutorado.jpg" alt=""></a></div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </section>
 
-    <section>
-        <h2>Historicals</h2>
-        <div>
-            <ul>
-                <div class="historical-grid">
-                    <li>
-                        Information Systems
-                        <div><a href="assets/historicos/historico_unp.pdf"> <img class="diplom" src="assets/historicos/historico_unp.png" alt=""></a></div>
-                    </li>
-                    <li>
-                        Science and Technology
-                        <div><a href="assets/historicos/historico_2009032110.pdf"> <img class="diplom" src="assets/historicos/historico_2009032110.png" alt=""></a></div>
-                    </li>
-                    <li>
-                        Information Technology
-                        <div><a href="assets/historicos/historico_20180057876.pdf"> <img class="diplom" src="assets/historicos/historico_20180057876.png" alt=""></a></div>
-                    </li>
-                    <li>
-                        Molecular Neuroscience
-                        <div><a href="assets/historicos/historico_2012118704.pdf"> <img class="diplom" src="assets/historicos/historico_2012118704.png" alt=""></a></div>
-                    </li>
-                    <li>
-                        Computational Neuroscience
-                        <div><a href="assets/historicos/historico_2016101160.pdf"> <img class="diplom" src="assets/historicos/historico_2016101160.png" alt=""></a></div>
-                    </li>
-                    <li>
-                        Computer Science
-                        <div><a href="assets/historicos/historico_20250065940.pdf"> <img class="diplom" src="assets/historicos/historico_20250065940.png" alt=""></a></div>
-                    </li>
-                </div>
-            </ul>
-        </div>
-    </section>
-
+        <section>
+            <h2>Historicals</h2>
+            <div>
+                <ul>
+                    <div class="historical-grid">
+                        <li>
+                            Information Systems
+                            <div><a href="assets/historicos/historico_unp.pdf"> <img class="diplom" src="assets/historicos/historico_unp.png" alt=""></a></div>
+                        </li>
+                        <li>
+                            Science and Technology
+                            <div><a href="assets/historicos/historico_2009032110.pdf"> <img class="diplom" src="assets/historicos/historico_2009032110.png" alt=""></a></div>
+                        </li>
+                        <li>
+                            Information Technology
+                            <div><a href="assets/historicos/historico_20180057876.pdf"> <img class="diplom" src="assets/historicos/historico_20180057876.png" alt=""></a></div>
+                        </li>
+                        <li>
+                            Molecular Neuroscience
+                            <div><a href="assets/historicos/historico_2012118704.pdf"> <img class="diplom" src="assets/historicos/historico_2012118704.png" alt=""></a></div>
+                        </li>
+                        <li>
+                            Computational Neuroscience
+                            <div><a href="assets/historicos/historico_2016101160.pdf"> <img class="diplom" src="assets/historicos/historico_2016101160.png" alt=""></a></div>
+                        </li>
+                        <li>
+                            Computer Science
+                            <div><a href="assets/historicos/historico_20250065940.pdf"> <img class="diplom" src="assets/historicos/historico_20250065940.png" alt=""></a></div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </section>
     </body>
 </html>
