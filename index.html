@@ -109,15 +109,15 @@
             align-items: center;
             gap: 5px;
             padding: 10px 15px;
-            background: #f7f9fa;
-            border-left: 4px solid #2c3e50;
-            border-radius: 6px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-            transition: transform 0.15s ease, box-shadow 0.15s ease;
+            /*background: #f7f9fa;*/
+            /*border-left: 4px solid #2c3e50;
+            border-radius: 6px;*/
+            /*box-shadow: 0 1px 3px rgba(0,0,0,0.08);*/
+            /*transition: transform 0.15s ease, box-shadow 0.15s ease;*/
         }
         .scholarship-entry:hover {
             transform: translateX(4px);
-            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            /*box-shadow: 0 2px 6px rgba(0,0,0,0.15);*/
         }
         .scholarship-entry .year {
             font-weight: bold;
@@ -291,8 +291,8 @@
                </ul>
             </div>
 
-            <div class="skill-list">
-                <h3>Web</h3>
+            <h3>Web</h3>
+            <div class="skills-list">
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
@@ -300,8 +300,8 @@
                 </ul>
             </div>
 
-            <div class="skill-list">
-                <h3>Others</h3>
+            <h3>Others</h3>
+            <div class="skills-list">
                 <ul>
                     <li>MATLAB</li>
                     <li>Arduino</li>
@@ -382,101 +382,99 @@
         </section>
 
         <section style="display: block;">
-        <h2>Publications</h2>
-        <ul class="publications-list">
-            <li>
+            <h2>Publications</h2>
+            <ul class="publications-list">
+                <li>
 
-                <h3><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0053374">
-                    Rising Publication Delays Inflate Journal Impact Factors
-                </a>
-                </h3>
-                <div class="thumbnail_abstract_grid">
-                    <a href="assets/artigos/delay_inflates.pdf">
-                        <img src="assets/artigos/delay_inflates.png" alt="Frontiers in Human Neuroscience" style="max-width: 120px; height: auto;">
+                    <h3><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0053374">
+                        Rising Publication Delays Inflate Journal Impact Factors
                     </a>
-                    <div>
-                        <p>
-                            This article demonstrates that the hybrid journals (on-line and physical)
-                            impact factor (a metric of how influence the articles are) are inflated
-                            by the way the metric is computed since the physical publication date is used and
-                            the on-line publication date - that is becoming earlier - is not considered.
-                        </p>
-                        <p>
-                            My work here is on data collection by manually gathering Elsevier's Web of Knowledge data
-                            and analyzing it using MATLAB.
-                        </p>
+                    </h3>
+                    <div class="thumbnail_abstract_grid">
+                        <a href="assets/artigos/delay_inflates.pdf">
+                            <img src="assets/artigos/delay_inflates.png" style="max-width: 120px; height: auto;">
+                        </a>
+                        <div>
+                            <p>
+                                This article demonstrates that the hybrid journals (on-line and physical)
+                                impact factor (a metric of how influence the articles are) are inflated
+                                by the way the metric is computed since the physical publication date is used and
+                                the on-line publication date - that is becoming earlier - is not considered.
+                            </p>
+                            <p>
+                                My work here is on data collection by manually gathering Elsevier's Web of Knowledge data
+                                and analyzing it using MATLAB.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <span class="pub-meta">(2013 | Citations: 0 | Venue: PLOS ONE)</span>
-            </li>
-            <li>
-                <a href="https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2013.00836/full">
-                    Dream characteristics in a Brazilian sample: an online survey focusing on lucid dreaming
-                </a>
-                <div class="thumbnail_abstract_grid">
-                    <a href="assets/artigos/lucid_dream.pdf">
-                        <img src="assets/artigos/lucid_dream.png" alt="Frontiers in Human Neuroscience" style="max-width: 120px; height: auto;">
+                    <span class="pub-meta">(2013 | Citations: 0 | Venue: PLOS ONE)</span>
+                </li>
+                <li>
+                    <a href="https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2013.00836/full">
+                        Dream characteristics in a Brazilian sample: an online survey focusing on lucid dreaming
                     </a>
-                    <div>
-                        <p>
-                            This article presents a survey data directed towards lucid dreaming in a Brazilian sample.
-                            We collected data from a sample of 1,000 participants using a web-based survey.
-                            We presented summary statistics and descriptive analyses of the data.
-                        </p>
-                        <p>
-                            I participated by the second stage of data collection and analysis.
-                            Gathered csv files from the survey and analyzed them using MATLAB.
-                        </p>
+                    <div class="thumbnail_abstract_grid">
+                        <a href="assets/artigos/lucid_dream.pdf">
+                            <img src="assets/artigos/lucid_dream.png" style="max-width: 120px; height: auto;">
+                        </a>
+                        <div>
+                            <p>
+                                This article presents a survey data directed towards lucid dreaming in a Brazilian sample.
+                                We collected data from a sample of 1,000 participants using a web-based survey.
+                                We presented summary statistics and descriptive analyses of the data.
+                            </p>
+                            <p>
+                                I participated by the second stage of data collection and analysis.
+                                Gathered csv files from the survey and analyzed them using MATLAB.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <span class="pub-meta">(2013 | Citations: 0 | Venue: Frontiers in Human Neuroscience)</span>
-            </li>
-            <li>
-                <a href="https://journals.physiology.org/doi/full/10.1152/jn.00367.2014">
-                    Interconnection and synchronization of neuronal populations in the mouse medial septum/diagonal band of Broca
-                </a>
-                <div class="thumbnail_abstract_grid">
-                    <a href="assets/artigos/medial_septum.pdf">
-                        <img src="assets/artigos/medial_septum.png" alt="Frontiers in Human Neuroscience" style="max-width: 120px; height: auto;">
+                    <span class="pub-meta">(2013 | Citations: 0 | Venue: Frontiers in Human Neuroscience)</span>
+                </li>
+                <li>
+                    <a href="https://journals.physiology.org/doi/full/10.1152/jn.00367.2014">
+                        Interconnection and synchronization of neuronal populations in the mouse medial septum/diagonal band of Broca
                     </a>
-                    <div>
-                        <p>
-                            We analyzed the interconnection and synchronization of neuronal populations in the mouse medial septum/diagonal band of Broca.
-                            We utilized distinct methods to stimulate while recording intracellular activity of neurons using a patch clamp technique.
-                        </p>
-                        <p>
-                            I performed brain slices recorded under a microscope and micromanipulators
-                            driving a glass pipette by the side of the membrane of MS/DBB neurons while
-                            stimulating them with nicotine to realize that there were no influence and
-                            arguing that no nicotinergic receptors were present in those neurons.
-                        </p>
+                    <div class="thumbnail_abstract_grid">
+                        <a href="assets/artigos/medial_septum.pdf">
+                            <img src="assets/artigos/medial_septum.png" style="max-width: 120px; height: auto;">
+                        </a>
+                        <div>
+                            <p>
+                                We analyzed the interconnection and synchronization of neuronal populations in the mouse medial septum/diagonal band of Broca.
+                                We utilized distinct methods to stimulate while recording intracellular activity of neurons using a patch clamp technique.
+                            </p>
+                            <p>
+                                I performed brain slices recorded under a microscope and micromanipulators
+                                driving a glass pipette by the side of the membrane of MS/DBB neurons while
+                                stimulating them with nicotine to realize that there were no influence and
+                                arguing that no nicotinergic receptors were present in those neurons.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <span class="pub-meta">(2014 | Citations: 0 | Venue: Journal of Neurophysiology)</span>
-            </li>
-            <li>
-                <a href="https://www.cell.com/cell-reports/fulltext/S2211-1247(18)31643-7">
-                    Characterizing Speed Cells in the Rat Hippocampus
-                </a>
-                <div class="thumbnail_abstract_grid">
-                    <a href="assets/artigos/speed_cell.pdf">
-                        <img src="assets/artigos/speed_cell.png" alt="Frontiers in Human Neuroscience" style="max-width: 120px; height: auto;">
+                    <span class="pub-meta">(2014 | Citations: 0 | Venue: Journal of Neurophysiology)</span>
+                </li>
+                <li>
+                    <a href="https://www.cell.com/cell-reports/fulltext/S2211-1247(18)31643-7">
+                        Characterizing Speed Cells in the Rat Hippocampus
                     </a>
-                    <div>
-                        <p>
-                            I used open dataset in behavioral neuroscience to demonstrate that locomotion speed
-                            of rats positively correlates with few neuros of the hippocampal rat brain.
-                            These neurons were recorded with extracellular electrodes and I defended the thesis
-                            that those neurons are actually of inhibitory nature.
-                        </p>
+                    <div class="thumbnail_abstract_grid">
+                        <a href="assets/artigos/speed_cell.pdf">
+                            <img src="assets/artigos/speed_cell.png" style="max-width: 120px; height: auto;">
+                        </a>
+                        <div>
+                            <p>
+                                I used open dataset in behavioral neuroscience to demonstrate that locomotion speed
+                                of rats positively correlates with few neuros of the hippocampal rat brain.
+                                These neurons were recorded with extracellular electrodes and I defended the thesis
+                                that those neurons are actually of inhibitory nature.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <span class="pub-meta">(2018 | Citations: 0 | Venue: Cell Reports)</span>
-            </li>
-
-        </ul>
-    </section>
-
+                    <span class="pub-meta">(2018 | Citations: 0 | Venue: Cell Reports)</span>
+                </li>
+            </ul>
+        </section>
 
         <section>
             <h2>Diplomas</h2>
