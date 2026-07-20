@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
     <head>
         <title>José Gois - Curriculum</title>
     <meta charset="UTF-8">
@@ -89,9 +89,12 @@
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
+            margin: 0;
+            padding: 0;
         }
 
-        .skills-list span {
+        .skills-list li {
+            list-style: none;
             background: #eef2f5;
             padding: 5px 12px;
             border-radius: 15px;
@@ -109,15 +112,15 @@
             align-items: center;
             gap: 5px;
             padding: 10px 15px;
-            /*background: #f7f9fa;*/
-            /*border-left: 4px solid #2c3e50;
-            border-radius: 6px;*/
-            /*box-shadow: 0 1px 3px rgba(0,0,0,0.08);*/
-            /*transition: transform 0.15s ease, box-shadow 0.15s ease;*/
+            background: #f7f9fa;
+            border-left: 4px solid #2c3e50;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
         }
         .scholarship-entry:hover {
             transform: translateX(4px);
-            /*box-shadow: 0 2px 6px rgba(0,0,0,0.15);*/
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
         }
         .scholarship-entry .year {
             font-weight: bold;
@@ -141,18 +144,6 @@
             color: #444;
             font-style: italic;
         }
-        #publications-list li {
-            display: flex;
-            align-items: flex-start;
-            gap: 15px;
-            margin-bottom: 25px;
-        }
-        #publications-list li > a:first-child {
-            flex-shrink: 0;
-        }
-        #publications-list li > div {
-            flex: 1;
-        }
 
         .diplom {
             display: block;
@@ -171,6 +162,7 @@
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
             gap: 20px;
+            padding: 0;
         }
         .diplomas-grid li {
             list-style: none;
@@ -182,16 +174,13 @@
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr;
             gap: 20px;
+            padding: 0;
         }
+
         .historical-grid li {
             list-style: none;
             align-items: center;
         }
-        /*.thumbnail_abstract_grid {
-            display: grid;
-            grid-template-columns: 1fr 29fr;
-            gap: 10px;
-        }*/
 
         .thumbnail_abstract_grid a {
             float: left; /* or right */
@@ -277,32 +266,34 @@
 
         <section>
             <h2>Technical Skills</h2>
-            <li>Linux</li>
-            <li>Low-level systems programming</li>
+            <ul>
+                <li>Linux</li>
+                <li>Low-level systems programming</li>
+            </ul>
 
-            <h3>Programming Languages</h3>
-            <div class="skills-list">
-               <ul>
-                   <li>C</li>
-                   <li>C++</li>
-                   <li>Rust</li>
-                   <li>Shell</li>
-                   <li>Python</li>
-               </ul>
+            <div class="skills-list-wrapper">
+                <h3>Programming Languages</h3>
+                <ul class="skills-list">
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Rust</li>
+                    <li>Shell</li>
+                    <li>Python</li>
+                </ul>
             </div>
 
-            <h3>Web</h3>
-            <div class="skills-list">
-                <ul>
+            <div class="skills-list-wrapper">
+                <h3>Web</h3>
+                <ul class="skills-list">
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
                 </ul>
             </div>
 
-            <h3>Others</h3>
-            <div class="skills-list">
-                <ul>
+            <div class="skills-list-wrapper">
+                <h3>Others</h3>
+                <ul class="skills-list">
                     <li>MATLAB</li>
                     <li>Arduino</li>
                     <li>ESP-32</li>
@@ -315,11 +306,8 @@
             I have built a crate ecossystem that gives us abstraction over the Linux kernel.
 
             <ul>
-                <li><a href="https://crates.io/crates/ample">Ample</a></li>
-                This crate give us abstraction
-
-                <li><a href="https://crates.io/crates/userspace">Userspace</a></li>
-                This crate bootstraps rust from assembly and provides a userspace environment.
+                <li><a href="https://crates.io/crates/ample">Ample</a> - This crate gives us abstraction over the Linux kernel.</li>
+                <li><a href="https://crates.io/crates/userspace">Userspace</a> - This crate bootstraps Rust from assembly and provides a userspace environment.</li>
             </ul>
         </section>
 
@@ -383,7 +371,7 @@
 
         <section style="display: block;">
             <h2>Publications</h2>
-            <ul class="publications-list">
+            <ul id="publications-list">
                 <li>
 
                     <h3><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0053374">
@@ -392,7 +380,7 @@
                     </h3>
                     <div class="thumbnail_abstract_grid">
                         <a href="assets/artigos/delay_inflates.pdf">
-                            <img src="assets/artigos/delay_inflates.png" style="max-width: 120px; height: auto;">
+                            <img src="assets/artigos/delay_inflates.png" alt="Rising Publication Delays Inflate Journal Impact Factors - PLOS ONE" style="max-width: 120px; height: auto;">
                         </a>
                         <div>
                             <p>
@@ -415,7 +403,7 @@
                     </a>
                     <div class="thumbnail_abstract_grid">
                         <a href="assets/artigos/lucid_dream.pdf">
-                            <img src="assets/artigos/lucid_dream.png" style="max-width: 120px; height: auto;">
+                            <img src="assets/artigos/lucid_dream.png" alt="Dream characteristics in a Brazilian sample - Frontiers in Human Neuroscience" style="max-width: 120px; height: auto;">
                         </a>
                         <div>
                             <p>
@@ -437,7 +425,7 @@
                     </a>
                     <div class="thumbnail_abstract_grid">
                         <a href="assets/artigos/medial_septum.pdf">
-                            <img src="assets/artigos/medial_septum.png" style="max-width: 120px; height: auto;">
+                            <img src="assets/artigos/medial_septum.png" alt="Interconnection and synchronization of neuronal populations in the mouse medial septum/diagonal band of Broca - Journal of Neurophysiology" style="max-width: 120px; height: auto;">
                         </a>
                         <div>
                             <p>
@@ -460,7 +448,7 @@
                     </a>
                     <div class="thumbnail_abstract_grid">
                         <a href="assets/artigos/speed_cell.pdf">
-                            <img src="assets/artigos/speed_cell.png" style="max-width: 120px; height: auto;">
+                            <img src="assets/artigos/speed_cell.png" alt="Characterizing Speed Cells in the Rat Hippocampus - Cell Reports" style="max-width: 120px; height: auto;">
                         </a>
                         <div>
                             <p>
@@ -478,62 +466,54 @@
 
         <section>
             <h2>Diplomas</h2>
-            <div>
-                <ul>
-                    <div class="diplomas-grid">
-                        <li>
-                            Bachelor's Degree in Science and Technology
-                            <div><a href="assets/diplomas/diploma_cet.jpg"> <img class="diplom" src="assets/diplomas/diploma_cet.jpg" alt=""></a></div>
-                        </li>
-                        <li>
-                            Bachelor's Degree in Information Technology
-                            <div><a href="assets/diplomas/diploma_bti.png"> <img class="diplom" src="assets/diplomas/diploma_bti.png" alt=""></a></div>
-                        </li>
-                        <li>
-                            Master's Degree in Molecular Neuroscience
-                            <div><a href="assets/diplomas/diploma_master.png"> <img class="diplom" src="assets/diplomas/diploma_master.png" alt=""></a></div>
-                        </li>
-                        <li>
-                            Doctorate Degree in Computational Neuroscience
-                            <div><a href="assets/diplomas/diploma_doutorado.jpg"> <img class="diplom" src="assets/diplomas/diploma_doutorado.jpg" alt=""></a></div>
-                        </li>
-                    </div>
-                </ul>
-            </div>
+            <ul class="diplomas-grid">
+                <li>
+                    Bachelor's Degree in Science and Technology
+                    <div><a href="assets/diplomas/diploma_cet.jpg"> <img class="diplom" src="assets/diplomas/diploma_cet.jpg" alt="Diploma - Bachelor's Degree in Science and Technology"></a></div>
+                </li>
+                <li>
+                    Bachelor's Degree in Information Technology
+                    <div><a href="assets/diplomas/diploma_bti.png"> <img class="diplom" src="assets/diplomas/diploma_bti.png" alt="Diploma - Bachelor's Degree in Information Technology"></a></div>
+                </li>
+                <li>
+                    Master's Degree in Molecular Neuroscience
+                    <div><a href="assets/diplomas/diploma_master.png"> <img class="diplom" src="assets/diplomas/diploma_master.png" alt="Diploma - Master's Degree in Molecular Neuroscience"></a></div>
+                </li>
+                <li>
+                    Doctorate Degree in Computational Neuroscience
+                    <div><a href="assets/diplomas/diploma_doutorado.jpg"> <img class="diplom" src="assets/diplomas/diploma_doutorado.jpg" alt="Diploma - Doctorate Degree in Computational Neuroscience"></a></div>
+                </li>
+            </ul>
         </section>
 
         <section>
             <h2>Historicals</h2>
-            <div>
-                <ul>
-                    <div class="historical-grid">
-                        <li>
-                            Information Systems
-                            <div><a href="assets/historicos/historico_unp.pdf"> <img class="diplom" src="assets/historicos/historico_unp.png" alt=""></a></div>
-                        </li>
-                        <li>
-                            Science and Technology
-                            <div><a href="assets/historicos/historico_2009032110.pdf"> <img class="diplom" src="assets/historicos/historico_2009032110.png" alt=""></a></div>
-                        </li>
-                        <li>
-                            Information Technology
-                            <div><a href="assets/historicos/historico_20180057876.pdf"> <img class="diplom" src="assets/historicos/historico_20180057876.png" alt=""></a></div>
-                        </li>
-                        <li>
-                            Molecular Neuroscience
-                            <div><a href="assets/historicos/historico_2012118704.pdf"> <img class="diplom" src="assets/historicos/historico_2012118704.png" alt=""></a></div>
-                        </li>
-                        <li>
-                            Computational Neuroscience
-                            <div><a href="assets/historicos/historico_2016101160.pdf"> <img class="diplom" src="assets/historicos/historico_2016101160.png" alt=""></a></div>
-                        </li>
-                        <li>
-                            Computer Science
-                            <div><a href="assets/historicos/historico_20250065940.pdf"> <img class="diplom" src="assets/historicos/historico_20250065940.png" alt=""></a></div>
-                        </li>
-                    </div>
-                </ul>
-            </div>
+            <ul class="historical-grid">
+                <li>
+                    Information Systems
+                    <div><a href="assets/historicos/historico_unp.pdf"> <img class="diplom" src="assets/historicos/historico_unp.png" alt="Transcript - Information Systems"></a></div>
+                </li>
+                <li>
+                    Science and Technology
+                    <div><a href="assets/historicos/historico_2009032110.pdf"> <img class="diplom" src="assets/historicos/historico_2009032110.png" alt="Transcript - Science and Technology"></a></div>
+                </li>
+                <li>
+                    Information Technology
+                    <div><a href="assets/historicos/historico_20180057876.pdf"> <img class="diplom" src="assets/historicos/historico_20180057876.png" alt="Transcript - Information Technology"></a></div>
+                </li>
+                <li>
+                    Molecular Neuroscience
+                    <div><a href="assets/historicos/historico_2012118704.pdf"> <img class="diplom" src="assets/historicos/historico_2012118704.png" alt="Transcript - Molecular Neuroscience"></a></div>
+                </li>
+                <li>
+                    Computational Neuroscience
+                    <div><a href="assets/historicos/historico_2016101160.pdf"> <img class="diplom" src="assets/historicos/historico_2016101160.png" alt="Transcript - Computational Neuroscience"></a></div>
+                </li>
+                <li>
+                    Computer Science
+                    <div><a href="assets/historicos/historico_20250065940.pdf"> <img class="diplom" src="assets/historicos/historico_20250065940.png" alt="Transcript - Computer Science"></a></div>
+                </li>
+            </ul>
         </section>
     </body>
 </html>
