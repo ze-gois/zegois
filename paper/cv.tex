@@ -1,0 +1,98 @@
+\documentclass[10pt,a4paper]{article}
+
+% Compile with: pdflatex cv.tex
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage[a4paper,top=1.25cm,bottom=1.25cm,left=1.45cm,right=1.45cm]{geometry}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+
+\definecolor{accent}{HTML}{173B57}
+\definecolor{muted}{HTML}{5F6B73}
+\definecolor{rule}{HTML}{CBD5DC}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=1.15em,itemsep=1pt,topsep=2pt,parsep=0pt}
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0pt}{}[\vspace{-5pt}\color{rule}\rule{\linewidth}{0.5pt}]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+\urlstyle{same}
+
+\newcommand{\entry}[4]{%
+  \textbf{#1}\hfill\textcolor{muted}{#2}\\[-1pt]
+  \textit{#3}\hfill\textcolor{muted}{#4}\par\vspace{3pt}
+}
+
+\begin{document}
+
+{\fontsize{22}{25}\selectfont\bfseries\color{accent} José Henrique Targino Dias Góis}\par
+\vspace{2pt}
+{\large Systems Programmer \textbar{} Linux \textbar{} Rust \textbar{} Cybersecurity}\par
+\vspace{5pt}
+\small
+Natal, RN, Brazil \textbullet{} \href{mailto:jhenriquetdg@gmail.com}{jhenriquetdg@gmail.com} \textbullet{} +55 84 99114-4431\\
+\href{https://zegois.com}{zegois.com} \textbullet{} \href{https://github.com/ze-gois}{github.com/ze-gois} \textbullet{} \href{https://x.com/zenrique}{x.com/zenrique}
+\normalsize
+
+\section{Profile}
+Systems programmer and researcher transitioning from computational neuroscience to operating systems and cybersecurity. Experienced with Linux, low-level programming, scientific computing, and data analysis. Currently studying Computer Science and developing Rust-based abstractions for Linux kernel interfaces and userspace environments. Brings a PhD-level research background, peer-reviewed publications, and a strong foundation in quantitative problem solving.
+
+\section{Technical Focus}
+\begin{tabularx}{\linewidth}{@{}>{\bfseries}p{0.21\linewidth}X@{}}
+Systems & Linux, operating systems, Linux kernel interfaces, low-level programming \\
+Programming & Rust, C, C++, Python, Shell, MATLAB \\
+Web & HTML, CSS, JavaScript \\
+Embedded & Arduino, ESP32 \\
+Tools and methods & Git, data analysis, scientific computing, experimental automation
+\end{tabularx}
+
+\section{Selected Projects}
+\entry{Ample}{Rust}{Linux kernel abstraction crate}{\href{https://github.com/ze-gois}{GitHub profile}}%
+Provides Rust abstractions over interfaces exposed by the Linux kernel.
+
+\entry{Userspace}{Rust}{Userspace environment}{\href{https://github.com/ze-gois}{GitHub profile}}%
+Bootstraps Rust from assembly and provides a userspace environment for low-level experimentation.
+
+\section{Experience}
+\entry{Graduate Researcher}{2012--2020}{Instituto do Cérebro, Universidade Federal do Rio Grande do Norte (UFRN)}{Natal, Brazil}%
+\begin{itemize}
+  \item Designed, conducted, and analyzed experimental neuroscience studies involving electrophysiology, microscopy, neuronal activity, and behavioral data.
+  \item Built reproducible data-analysis workflows using MATLAB and computational methods for extracting and interpreting signals from research datasets.
+  \item Contributed to peer-reviewed publications in neuroscience and bibliometrics, working across experimental and computational research.
+\end{itemize}
+
+\entry{Programmer}{2005--2006}{AR Consultoria em Informática}{Natal, Brazil}%
+Maintained and developed modules for an enterprise information-management system using Delphi/Pascal and Firebird SQL.
+
+\section{Education}
+\entry{BSc in Computer Science}{In progress; expected 2028}{Universidade Federal do Rio Grande do Norte (UFRN)}{Natal, Brazil}
+\entry{BSc in Information Technology}{Completed 2025}{Universidade Federal do Rio Grande do Norte (UFRN)}{Natal, Brazil}
+\entry{PhD in Neuroscience}{2016--2020}{Universidade Federal do Rio Grande do Norte (UFRN)}{Computational neuroscience}
+\entry{MSc in Neuroscience}{2012--2015}{Universidade Federal do Rio Grande do Norte (UFRN)}{Cellular and molecular neuroscience}
+\entry{BSc in Science and Technology}{2009--2012}{Universidade Federal do Rio Grande do Norte (UFRN)}{}
+
+\section{Selected Publications}
+\begin{itemize}
+  \item \textbf{Characterizing Speed Cells in the Rat Hippocampus.} \textit{Cell Reports}, 2018.
+  \item \textbf{Interconnection and synchronization of neuronal populations in the mouse medial septum/diagonal band of Broca.} \textit{Journal of Neurophysiology}, 2014.
+  \item \textbf{Dream characteristics in a Brazilian sample: an online survey focusing on lucid dreaming.} \textit{Frontiers in Human Neuroscience}, 2013.
+  \item \textbf{Rising Publication Delays Inflate Journal Impact Factors.} \textit{PLOS ONE}, 2012.
+\end{itemize}
+
+\section{Languages and Academic Recognition}
+\begin{tabularx}{\linewidth}{@{}>{\bfseries}p{0.21\linewidth}X@{}}
+Languages & Portuguese (native), English (professional working proficiency), Spanish (intermediate) \\
+Scholarships & Research funding and scholarships from CNPq, CAPES, CONICET, and UFRN/Propesq
+\end{tabularx}
+
+\vfill
+{\footnotesize\color{muted}Last updated August 2026 \textbullet{} Portfolio and project links: \href{https://zegois.com}{zegois.com}}
+
+\end{document}
