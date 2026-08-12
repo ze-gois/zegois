@@ -1,10 +1,10 @@
 \documentclass[10pt,a4paper]{article}
 
-% Compile with: pdflatex cv.tex
+% Compile with: pdflatex -interaction=nonstopmode -halt-on-error resume.tex
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
-\usepackage[a4paper,top=1.25cm,bottom=1.25cm,left=1.45cm,right=1.45cm]{geometry}
+\usepackage[a4paper,top=1.15cm,bottom=1.15cm,left=1.4cm,right=1.4cm]{geometry}
 \usepackage{lmodern}
 \usepackage{xcolor}
 \usepackage{enumitem}
@@ -22,77 +22,78 @@
 \setlength{\parskip}{0pt}
 \setlist[itemize]{leftmargin=1.15em,itemsep=1pt,topsep=2pt,parsep=0pt}
 \titleformat{\section}{\large\bfseries\color{accent}}{}{0pt}{}[\vspace{-5pt}\color{rule}\rule{\linewidth}{0.5pt}]
-\titlespacing*{\section}{0pt}{8pt}{4pt}
+\titlespacing*{\section}{0pt}{7pt}{3pt}
 \urlstyle{same}
 
 \newcommand{\entry}[4]{%
   \textbf{#1}\hfill\textcolor{muted}{#2}\\[-1pt]
-  \textit{#3}\hfill\textcolor{muted}{#4}\par\vspace{3pt}
+  \textit{#3}\hfill\textcolor{muted}{#4}\par\vspace{2pt}
 }
 
 \begin{document}
 
-{\fontsize{22}{25}\selectfont\bfseries\color{accent} José Henrique Targino Dias Góis}\par
-\vspace{2pt}
-{\large Systems Programmer \textbar{} Linux \textbar{} Rust \textbar{} Cybersecurity}\par
-\vspace{5pt}
+{\fontsize{21}{24}\selectfont\bfseries\color{accent} José Henrique Targino Dias Gois}\par
+\vspace{1pt}
+{\large Software Developer \textbar{} Rust, Linux and Low-Level Systems}\par
+\vspace{4pt}
 \small
-Natal, RN, Brazil \textbullet{} \href{mailto:jhenriquetdg@gmail.com}{jhenriquetdg@gmail.com} \textbullet{} +55 84 99114-4431\\
-\href{https://zegois.com}{zegois.com} \textbullet{} \href{https://github.com/ze-gois}{github.com/ze-gois} \textbullet{} \href{https://x.com/zenrique}{x.com/zenrique}
+Natal, RN, Brazil \textbullet{}
+\href{mailto:jose.gois.014@ufrn.br}{jose.gois.014@ufrn.br} \textbullet{}
++55 84 99114-4431\\
+\href{https://zegois.com}{zegois.com} \textbullet{}
+\href{https://github.com/ze-gois}{github.com/ze-gois} \textbullet{}
+\href{https://x.com/zenrique}{x.com/zenrique}
 \normalsize
 
 \section{Profile}
-Systems programmer and researcher transitioning from computational neuroscience to operating systems and cybersecurity. Experienced with Linux, low-level programming, scientific computing, and data analysis. Currently studying Computer Science and developing Rust-based abstractions for Linux kernel interfaces and userspace environments. Brings a PhD-level research background, peer-reviewed publications, and a strong foundation in quantitative problem solving.
+Software developer focused on Rust, Linux interfaces, userspace environments, and low-level systems. Builds open-source abstractions and experimental runtimes involving system calls, ELF binaries, assembly bootstrap, and \texttt{no\_std} Rust. PhD-trained researcher with extensive experience in reproducible computational work and quantitative problem solving.
 
-\section{Technical Focus}
-\begin{tabularx}{\linewidth}{@{}>{\bfseries}p{0.21\linewidth}X@{}}
-Systems & Linux, operating systems, Linux kernel interfaces, low-level programming \\
+\section{Technical Skills}
+\begin{tabularx}{\linewidth}{@{}>{\bfseries}p{0.20\linewidth}X@{}}
 Programming & Rust, C, C++, Python, Shell, MATLAB \\
-Web & HTML, CSS, JavaScript \\
-Embedded & Arduino, ESP32 \\
-Tools and methods & Git, data analysis, scientific computing, experimental automation
+Systems & Linux, system calls, ELF, assembly bootstrap, \texttt{no\_std}, userspace runtimes \\
+Tools & Git, GitHub Actions, Cargo, QEMU, GDB, scientific computing and data analysis
 \end{tabularx}
 
 \section{Selected Projects}
-\entry{Ample}{Rust}{Linux kernel abstraction crate}{\href{https://github.com/ze-gois}{GitHub profile}}%
-Provides Rust abstractions over interfaces exposed by the Linux kernel.
+\entry{Userspace}{Rust / Assembly}{Experimental userspace environment}{\href{https://github.com/ze-gois/userspace}{github.com/ze-gois/userspace}}%
+\begin{itemize}
+  \item Bootstraps Rust from assembly and provides low-level runtime facilities for Linux userspace experimentation.
+  \item Implements and organizes interfaces for system calls, memory management, file access, processes, and ELF-oriented development.
+\end{itemize}
 
-\entry{Userspace}{Rust}{Userspace environment}{\href{https://github.com/ze-gois}{GitHub profile}}%
-Bootstraps Rust from assembly and provides a userspace environment for low-level experimentation.
+\entry{Ample}{Rust}{Linux kernel interface abstractions}{\href{https://github.com/ze-gois/ample}{github.com/ze-gois/ample}}%
+\begin{itemize}
+  \item Develops reusable Rust abstractions over interfaces exposed by the Linux kernel.
+  \item Supports low-level and \texttt{no\_std}-oriented software while keeping kernel-facing behavior explicit.
+\end{itemize}
 
 \section{Experience}
-\entry{Graduate Researcher}{2012--2020}{Instituto do Cérebro, Universidade Federal do Rio Grande do Norte (UFRN)}{Natal, Brazil}%
+\entry{Open-Source Systems Projects}{Current}{Independent Rust and Linux development}{Natal, Brazil}%
+Develops and maintains low-level Rust libraries and experimental userspace software, including build automation, cross-target compilation, and repository-based CI workflows.
+
+\entry{Graduate Researcher}{2012--2020}{Instituto do Cérebro, Universidade Federal do Rio Grande do Norte}{Natal, Brazil}%
 \begin{itemize}
-  \item Designed, conducted, and analyzed experimental neuroscience studies involving electrophysiology, microscopy, neuronal activity, and behavioral data.
-  \item Built reproducible data-analysis workflows using MATLAB and computational methods for extracting and interpreting signals from research datasets.
-  \item Contributed to peer-reviewed publications in neuroscience and bibliometrics, working across experimental and computational research.
+  \item Designed reproducible computational workflows for electrophysiology, microscopy, neuronal activity, and behavioral datasets.
+  \item Published peer-reviewed research across experimental neuroscience, computational analysis, and bibliometrics.
 \end{itemize}
 
 \entry{Programmer}{2005--2006}{AR Consultoria em Informática}{Natal, Brazil}%
-Maintained and developed modules for an enterprise information-management system using Delphi/Pascal and Firebird SQL.
+Maintained and developed enterprise information-management modules using Delphi/Pascal and Firebird SQL.
 
 \section{Education}
-\entry{BSc in Computer Science}{In progress; expected 2028}{Universidade Federal do Rio Grande do Norte (UFRN)}{Natal, Brazil}
-\entry{BSc in Information Technology}{Completed 2025}{Universidade Federal do Rio Grande do Norte (UFRN)}{Natal, Brazil}
-\entry{PhD in Neuroscience}{2016--2020}{Universidade Federal do Rio Grande do Norte (UFRN)}{Computational neuroscience}
-\entry{MSc in Neuroscience}{2012--2015}{Universidade Federal do Rio Grande do Norte (UFRN)}{Cellular and molecular neuroscience}
-\entry{BSc in Science and Technology}{2009--2012}{Universidade Federal do Rio Grande do Norte (UFRN)}{}
-
-\section{Selected Publications}
-\begin{itemize}
-  \item \textbf{Characterizing Speed Cells in the Rat Hippocampus.} \textit{Cell Reports}, 2018.
-  \item \textbf{Interconnection and synchronization of neuronal populations in the mouse medial septum/diagonal band of Broca.} \textit{Journal of Neurophysiology}, 2014.
-  \item \textbf{Dream characteristics in a Brazilian sample: an online survey focusing on lucid dreaming.} \textit{Frontiers in Human Neuroscience}, 2013.
-  \item \textbf{Rising Publication Delays Inflate Journal Impact Factors.} \textit{PLOS ONE}, 2012.
-\end{itemize}
-
-\section{Languages and Academic Recognition}
-\begin{tabularx}{\linewidth}{@{}>{\bfseries}p{0.21\linewidth}X@{}}
-Languages & Portuguese (native), English (professional working proficiency), Spanish (intermediate) \\
-Scholarships & Research funding and scholarships from CNPq, CAPES, CONICET, and UFRN/Propesq
+\begin{tabularx}{\linewidth}{@{}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\textbf{BSc in Computer Science}, UFRN & Expected 2028 \\
+\textbf{BSc in Information Technology}, UFRN & 2025 \\
+\textbf{PhD in Neuroscience}, UFRN --- Computational neuroscience & 2020 \\
+\textbf{MSc in Neuroscience}, UFRN & 2015 \\
+\textbf{BSc in Science and Technology}, UFRN & 2012
 \end{tabularx}
 
+\section{Additional Information}
+Portuguese (native), English (professional working proficiency), Spanish (intermediate). Co-author of peer-reviewed research published in \textit{Cell Reports}, \textit{Journal of Neurophysiology}, \textit{Frontiers in Human Neuroscience}, and \textit{PLOS ONE}.
+
 \vfill
-{\footnotesize\color{muted}Last updated August 2026 \textbullet{} Portfolio and project links: \href{https://zegois.com}{zegois.com}}
+{\footnotesize\color{muted}Last updated August 2026 \textbullet{} Portfolio: \href{https://zegois.com}{zegois.com}}
 
 \end{document}
